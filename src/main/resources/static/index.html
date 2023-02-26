@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <form action="/createPayment">
+        <input type="radio" id="DEPOSIT" name="paymentType" value="DEPOSIT">
+        <label for="DEPOSIT">DEPOSIT</label><br>
+        <input type="radio" id="WITHDRAWAL" name="paymentType" value="WITHDRAWAL">
+        <label for="WITHDRAWAL">WITHDRAWAL</label><br>
+        <input type="radio" id="REFUND" name="paymentType" value="REFUND">
+        <label for="REFUND">REFUND</label><br>
+        <br>
+        Amount: <input type = "number" name = "amount" min = "0" step="0.01"/>
+        <br>
+        Currency: <input type = "text" name = "currency" maxlength= "3"/>
+        <br>
+        <input type = "submit" name = "submit" value = "Submit" />
+    </form>
+</body>
+</html>
