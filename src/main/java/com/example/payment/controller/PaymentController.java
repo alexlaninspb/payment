@@ -41,7 +41,8 @@ public class PaymentController {
             JSONObject res = (JSONObject) json.get("result");
             String url = (String) res.get("redirectUrl");
             URI uri = new URI(url);
-            HttpHeaders httpHeaders = new HttpHeaders();
+            HttpHeaders httpHeaders =
+                    new HttpHeaders();
             httpHeaders.setLocation(uri);
             return new ResponseEntity<>(httpHeaders, HttpStatus.SEE_OTHER);
         } else {
